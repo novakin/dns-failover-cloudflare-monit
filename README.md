@@ -11,6 +11,8 @@ Setup DNS Failover for Cloudflare with monit
 - restart monit
 - enjoy 
 
+Full installation instructions in french available [here] (https://www.noobunbox.net/serveur/configurer-un-dns-failover-cloudflare)
+
 
 ## Source
 Originally created by [roofer] (http://blog.booru.org/?p=12) and modified by myself to make it work with the lastest [cloudflare API] (https://api.cloudflare.com) (v4)
