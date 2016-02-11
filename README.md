@@ -2,6 +2,7 @@
 Setup DNS Failover for Cloudflare with monit
 
 
+## Installation
 - Move cloudflare directory to root folder
 - Create a directory named logs in /root/cloudflare/
 - Replace all variables in tomain.sh and tobackup.sh according to your cloudflare configuration and servers configuration
@@ -9,3 +10,10 @@ Setup DNS Failover for Cloudflare with monit
 - move cloudflare.conf into /etc/monit/conf.d
 - restart monit
 - enjoy 
+
+
+## Source
+Originally created by [roofer] (http://blog.booru.org/?p=12) and modified by myself to make it work with the lastest [cloudflare API] (https://api.cloudflare.com) (v4)
+
+
+## Licence
