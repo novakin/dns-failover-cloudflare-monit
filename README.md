@@ -2,6 +2,19 @@
 Setup DNS Failover for Cloudflare with monit
 
 
+## How does it work ?
+
+Best configuration requires 3 servers : primary, secondary and monit server. Still works with only two servers.
+
+Cloudflare DNS is configured to redirect internet traffic to  the primary server. 
+
+Monit is constantly checking health of primary server. 
+
+If primary web server stops to respond to ping, monit will launch a script. That script will modifiy CLoudflare DNS entry to redirect traffic to second webserver.
+
+Once primary webserver responds to ping again, Cloudflare DNS entry will be modified again
+
+
 ## Installation
 - Move cloudflare directory to root folder
 - Create a directory named logs in /root/cloudflare/
